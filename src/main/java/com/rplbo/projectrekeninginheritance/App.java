@@ -9,20 +9,20 @@ public class App
         rb.penarikan(25000);
         System.out.println(rb.getSaldo());
 
-        RekeningKeluarga rk = new RekeningKeluarga(new Nasabah("b", "2", "jl 2"),100000);
+        RekeningKeluarga rk = new RekeningKeluarga(new Nasabah("b", "2", "jl 2"),200000);
         rk.penyetoran(100000);
         rk.penarikan(25000);
         System.out.println(rb.getSaldo());
 
-        RekeningSyariah rs = new RekeningSyariah(new Nasabah("c", "3", "jl 3"),100000);
-        rs.penyetoran(100000);
+        RekeningSyariah rs = new RekeningSyariah(new Nasabah("c", "3", "jl 3"),500000);
+        rs.penyetoran(150000);
         rs.penarikan(25000);
-        rs.sumbangan(30000);
+        rs.sedekah(30000);
         System.out.println(rb.getSaldo());
 
         RekeningUtama ru = new RekeningUtama(new Nasabah("D", "4", "jl 4"),100000);
-        ru.penyetoran(100000);
-        ru.penarikan(25000);
+        ru.penyetoran(300000);
+        ru.penarikan(3500000);
         System.out.println(rb.getSaldo());
 
         RekeningTambahan rt = new RekeningTambahan(new Nasabah("E", "5", "jl 5"),50000);

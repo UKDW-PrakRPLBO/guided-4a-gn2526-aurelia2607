@@ -1,13 +1,12 @@
 package com.rplbo.projectrekeninginheritance;
 
 public class RekeningTambahan extends RekeningKeluarga{
+    public RekeningTambahan(Nasabah nasabah) {
+        super(nasabah);
+    }
 
     public RekeningTambahan(Nasabah nasabah, int saldo) {
         super(nasabah, saldo);
-    }
-
-    public RekeningTambahan(Nasabah nasabah) {
-        super(nasabah);
     }
 
     @Override
